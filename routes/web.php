@@ -5,6 +5,7 @@ use App\Http\Controllers\exercioController;
 use App\Http\Controllers\exercicio2Controller;
 use App\Http\Controllers\exercicio3Controller;
 use App\Http\Controllers\exercicio4Controller;
+use App\Http\Controllers\associativoController;
 Route::get('/', function () {
     return view('welcome');
 });
@@ -16,3 +17,5 @@ Route::get('/exercicio2',[exercicio2Controller::class,'tarefa']);
 Route::get('/exercicio3',[exercicio3Controller::class,'precos']);
 
 Route::get('/exercicio4',[exercicio4Controller::class,'produto']);
+
+route::get('/sextou',[associativoController::class,'TrazDados']);

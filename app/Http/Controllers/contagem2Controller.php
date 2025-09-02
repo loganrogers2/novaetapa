@@ -12,7 +12,7 @@ class contagem2Controller extends Controller
         foreach ($itens as $item){
             $quantidade++;
         }
-        return view('contagem2', compact('quantidade'));
+        return view('contagem2', compact('quantidade','itens'));
     }
 }
- 
+  

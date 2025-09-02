@@ -7,5 +7,16 @@
 </head>
 <body>
     <p>A quantidade de itens é: {{ $quantidade }}</p>
+   
+    <ul>
+        @foreach ($itens as $item)
+            <li>
+                {{ $item }}
+                @if ($item == 'item 1')
+                    <strong> produto em promoção</strong>
+                @endif
+            </li>
+        @endforeach 
+    </ul>
 </body>
 </html>
